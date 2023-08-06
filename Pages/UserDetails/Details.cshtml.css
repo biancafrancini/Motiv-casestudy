@@ -1,0 +1,38 @@
+h1{
+    text-align: center;
+    padding: 20px;
+}
+
+.card {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.user-info {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.user-info p {
+    margin: 5px 0;
+}
+
+.user-info strong {
+    font-weight: bold;
+}

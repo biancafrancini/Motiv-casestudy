@@ -1,0 +1,27 @@
+@page
+@model DetailsModel
+@{
+    ViewData["Title"] = "User Details";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+@if (Model.User != null)
+{
+    <div class="card">
+        <img src="@Model.User.Picture.Large" alt="User Picture" class="profile-picture">
+        <div class="user-info">
+            <p><strong>Name:</strong> @Model.User.Name.First @Model.User.Name.Last</p>
+            <p><strong>Gender:</strong> @Model.User.Gender</p>
+            <p><strong>Email:</strong> @Model.User.Email</p>
+            <p><strong>Phone:</strong> @Model.User.Phone</p>
+            <p><strong>Location:</strong> @Model.User.Location.Street.Number @Model.User.Location.Street.Name, @Model.User.Location.City, @Model.User.Location.State, @Model.User.Location.Postcode, @Model.User.Location.Country</p>
+        </div>
+    </div>
+}
+else
+{
+    <p>Unable to fetch user details.</p>
+}
+
+
