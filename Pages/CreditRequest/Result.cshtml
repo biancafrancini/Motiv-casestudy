@@ -1,0 +1,27 @@
+@page
+@model ResultModel
+@{
+    ViewData["Title"] = "Your estimated credit amount";
+}
+
+
+<div class="container">
+    <h1>@ViewData["Title"]</h1>
+
+    <p>Hi, @Model.Name</p>
+    <p>Based on your age, annual income, and employment status, you can get the following credit:</p>
+
+    <div class="financial-product">
+        <h2>$@Model.CreditAmount.ToString("N0")</h2>
+        <p>Secure your financial future with our exclusive credit offer.</p>
+        <p>Apply now and enjoy the benefits!</p>
+    </div>
+</div>
+
+
+
+
+
+
+
+

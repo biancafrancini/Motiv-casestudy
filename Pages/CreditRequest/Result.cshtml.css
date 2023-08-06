@@ -1,0 +1,31 @@
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 30px;
+    color: #333;
+    margin-top: 50px;
+}
+
+h2 {
+    font-size: 60px;
+    color: #fff;
+    margin-top: 30px;
+}
+
+.financial-product > p {
+    font-size: 20px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.financial-product {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 50px;
+}

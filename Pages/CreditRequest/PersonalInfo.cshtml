@@ -1,0 +1,46 @@
+@page
+@model PersonalInfoModel
+@{
+    ViewData["Title"] = "Personal Details";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div class="form-container">
+<p>Insert your personal details to see how much credit you can qualify for.</p>
+
+<form method="post" asp-page="PersonalInfo">
+    <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" class="form-control" asp-for="Name" required>
+    </div>
+
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" class="form-control" asp-for="Email" required>
+    </div>
+
+    <div class="form-group">
+        <label for="age">Age:</label>
+        <input type="number" id="age" class="form-control" asp-for="Age" required>
+    </div>
+
+    <div class="form-group">
+        <label for="annual_income">Annual Income:</label>
+        <input type="number" id="annual_income" class="form-control" asp-for="AnnualIncome" required>
+    </div>
+
+    <div class="form-group">
+        <label for="employment-status">Employment Status:</label>
+        <select id="employment-status" class="form-control" asp-for="EmploymentStatus" required>
+            <option value="full-time">Full-time</option>
+            <option value="part-time">Part-time</option>
+            <option value="self-employed">Self-employed</option>
+        </select>
+    </div>
+
+    <!-- Add more form fields for personal and financial details -->
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
